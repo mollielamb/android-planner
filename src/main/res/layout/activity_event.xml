@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/event_types"
+        android:prompt="@string/type_prompt" />
+
+    <EditText
+        android:id="@+id/event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner1"
+        android:ems="10"
+        android:hint="@string/enter_title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/event_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_title"
+        android:ems="10"
+        android:hint="@string/enter_content"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/event_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/enter_time" />
+
+            <EditText
+                android:id="@+id/timeHH"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/enter_time"
+                android:layout_weight=".25"
+                android:ems="10"
+                android:hint="@string/timeHour"
+                android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/timeMM"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_time"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/timeHH"
+        android:ems="10"
+        android:hint="@string/timeMins"
+        android:inputType="numberSigned" />
+
+    <Spinner
+        android:id="@+id/am_pm_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_time"
+        android:layout_toRightOf="@id/timeMM"
+        android:entries="@array/am_pm"
+        android:hint="@string/time_prompt" />
+    <Button
+        android:id="@+id/addNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeMM"
+        android:layout_gravity="center"
+        android:text="@string/add_record" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addNote"
+        android:text="Today's Date: "/>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:dividerHeight="1dp"
+        android:padding="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/empty_list_text" />
+        </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

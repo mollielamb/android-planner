@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mollie.examplanner">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".EditActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".ExamActivity"
+            android:theme="@style/AppTheme3"/>
+        <activity android:name=".EventActivity"
+            android:theme="@style/AppTheme3"/>
+
+        <!-- Register the Alarm Receiver -->
+        <activity android:name=".NotificationActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <!-- Register the Alarm Receiver -->
+        <receiver android:name=".NotificationReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+</manifest>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#DC143C</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="colorPrimaryDark2">#006400</color>
+    <color name="colorPrimary2">#008000</color>
+    <color name="colorAccent2">#3CB371</color>
+
+    <color name="colorPrimaryDark3">#1E90FF</color>
+    <color name="colorPrimary3">#00BFFF</color>
+    <color name="colorAccent3"> #00CED1</color>
+
+    <color name="textcolorHeader">#069ECF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#A5A5A5</color>
+
+    <!--switch color-->
+
+    <color name="active">#FF0000</color>
+    <color name="track_active">#DC143C</color>
+
+    <color name="inactive">#A5A5A5</color>
+    <color name="track_inactive">#66A5A5A5</color>
+</resources>

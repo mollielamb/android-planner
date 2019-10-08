@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Exam Schedule</string>
+    <string name="action_settings">Add</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="enter_name">Country Name</string>
+    <string name="add_record">Add Record</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="empty_list_text">No records found</string>
+    <string name="enter_content">Content</string>
+    <string name="enter_title">Title</string>
+    <string name="enter_time">Event Start Time: </string>
+    <string name="timeHour">Hours</string>
+    <string name="timeMins">Minutes</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="notification_head">Set Notifications</string>
+    <string name="notification_label">Notifications On/Off</string>
+    <string name="notifcation_note">*Note that notifications can be delayed</string>
+    <string name="schedule_label">Set Reminder Time</string>
+    <string name="scheduled_notification">9 : 00 AM</string>
+
+    <string name="type_prompt">Select Type of Event</string>
+
+    <string-array name="event_types">
+        <item>Party</item>
+        <item>Meeting</item>
+        <item>Exam</item>
+        <item>Holiday</item>
+        <item>Funeral</item>
+        <item>Other (Unspecified)</item>
+    </string-array>
+
+    <string name="time_prompt">AM/PM</string>
+
+    <string-array name="am_pm">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+    <string name="delete_info">To delete a note, hold selected note down until alert box pops up</string>
+    <string name="update_info">To update a note, tap on it</string>
+
+
+</resources>
